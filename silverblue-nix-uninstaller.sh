@@ -5,7 +5,7 @@ sudo systemctl daemon-reload
 sudo rm /etc/systemd/system/nix-daemon.service /etc/systemd/system/nix-daemon.socket
 sudo rm /etc/tmpfiles.d/nix-daemon.conf
 sudo rm -rf /nix/* /var/lib/nix /etc/nix /etc/profile.d/nix.sh ~root/.nix-profile ~root/.nix-defexpr ~root/.nix-channels ~/.nix-profile ~/.nix-defexpr ~/.nix-channels
-sudo rm -rf /etc/systemd/system/mkdir-rootfs@.service /etc/systemd/system/nix.mount
+sudo rm -rf /etc/systemd/system/mkdir-rootfs@.service /etc/systemd/system/nix.mount /etc/systemd/system/nix-daemon.service.d/override.conf
 
 for i in $(seq 1 32); do
   sudo userdel nixbld$i
