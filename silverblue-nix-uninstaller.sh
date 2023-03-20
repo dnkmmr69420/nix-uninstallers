@@ -13,3 +13,4 @@ done
 
 sudo groupdel nixbld
 sudo mv /etc/bashrc.backup-before-nix /etc/bashrc
+sudo mv /etc/zshrc.backup-before-nix /etc/zshrc
