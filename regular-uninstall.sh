@@ -4,7 +4,7 @@ sudo systemctl disable nix-daemon.socket nix-daemon.service
 sudo systemctl daemon-reload
 sudo rm /etc/systemd/system/nix-daemon.service /etc/systemd/system/nix-daemon.socket
 sudo rm /etc/tmpfiles.d/nix-daemon.conf
-sudo rm -rf /nix /etc/nix /etc/profile/nix.sh ~root/.nix-profile ~root/.nix-defexpr ~root/.nix-channels ~/.nix-profile ~/.nix-defexpr ~/.nix-channels
+sudo rm -rf /nix /etc/nix /etc/profile.d/nix.sh ~root/.nix-profile ~root/.nix-defexpr ~root/.nix-channels ~/.nix-profile ~/.nix-defexpr ~/.nix-channels
 
 for i in $(seq 1 32); do
   sudo userdel nixbld$i
